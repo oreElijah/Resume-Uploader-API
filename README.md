@@ -18,8 +18,7 @@ A FastAPI-based project that allows users to upload resumes. It includes authent
 - **Pydantic** - Data validation
 - **JWT Authentication** - Secure API authentication
 - **Role-Based Access Control** - Restrict access based on user roles
-
-## 📂 Folder Structure
+- **Email Confirmation** - Verify user email addresses
 
 ## 🔑 **User Roles**
 
