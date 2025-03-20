@@ -55,10 +55,7 @@ A FastAPI-based project that allows users to upload resumes. It includes authent
 
 ## 🎯 **Future Improvements**
 
-- Add email notifications on resume submission
-- Implement file size & format validation
-- Enhance UI for better user experience
-
+- Add resume downloading route 
 ---
 
 ### **👤 Author**
