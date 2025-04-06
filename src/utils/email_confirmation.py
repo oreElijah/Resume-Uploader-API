@@ -9,7 +9,7 @@ SMTP_SERVER = os.environ.get("SMTP_SERVER")
 SMTP_PORT = os.environ.get("SMTP_PORT") 
 async def send_confirmation_email(email: str, url: str):
     msg = EmailMessage()
-    msg["Subject"] = "Confirm your Email"
+    msg["Subject"] = "Email Verification"
     msg["From"] = SMTP_USERNAME
     msg["To"] = email
     msg.set_content(f"Click the link to confirm your email {url}")

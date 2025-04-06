@@ -12,7 +12,7 @@ user_table = sqlalchemy.Table(
     metadata,
     sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column("first_name", sqlalchemy.String),
-    sqlalchemy.Column("middle_name", sqlalchemy.String),
+    sqlalchemy.Column("username", sqlalchemy.String),
     sqlalchemy.Column("last_name", sqlalchemy.String),
     sqlalchemy.Column("email", sqlalchemy.String, unique=True),
     sqlalchemy.Column("password", sqlalchemy.String),

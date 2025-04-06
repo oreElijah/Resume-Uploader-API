@@ -11,7 +11,7 @@ class UserIn(BaseModel):
     """UserIn model definition"""
     first_name: str
     last_name: str
-    middle_name: str
+    username: str
     role: Role
     email: str
     password: str   

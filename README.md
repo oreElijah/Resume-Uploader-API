@@ -40,6 +40,7 @@ A FastAPI-based project that allows users to upload resumes. It includes authent
 
 - `POST /resume/upload_resume` - Upload a resume (Workers only)
 - `GET /resume` - View all resumes (Hirers only)
+- `POST /resume/download/{name}/{filename}` - download resumes (Hirers only)
 
 ## 📝 **How to Use**
 

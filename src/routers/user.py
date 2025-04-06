@@ -22,7 +22,7 @@ async def register_user(user: UserIn, request: Request, background_task: Backgro
     if cond:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail= "User with the email already exists")
     hashed_password = get_password_hash(user.password)
-    query = user_table.insert().values(first_name=user.first_name,middle_name = user.middle_name, last_name=user.last_name, email=user.email, password = hashed_password,role = user.role.value, confirmed=False)
+    query = user_table.insert().values(first_name=user.first_name,username = user.username, last_name=user.last_name, email=user.email, password = hashed_password,role = user.role.value, confirmed=False)
     user_id = await database.execute(query)
     confirmation_url = request.url_for(
                 "confirm_email", 
